@@ -1,6 +1,6 @@
 server '157.230.104.188', user: "#{fetch(:user)}", roles: %w{app db web}, primary: true
 
-set :application, 'app name'
+set :application, 'test2'
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 
 set :environment, 'production'
