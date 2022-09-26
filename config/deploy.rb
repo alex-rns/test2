@@ -5,7 +5,7 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp # if you want to chose bran
 
 set :user, 'deployer1'
 set :puma_user, fetch(:user)
-set :rvm_ruby_version, '3.2.1'
+set :rvm_ruby_version, '3.1.2'
 set :pty, true
 
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/master.key', 'config/puma.rb', 'config/secrets.yml')
